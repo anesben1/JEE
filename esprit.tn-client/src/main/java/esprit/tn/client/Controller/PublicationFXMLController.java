@@ -6,7 +6,7 @@
 package esprit.tn.client.Controller;
 
 import com.jfoenix.controls.JFXButton;
-import entity.Post;
+import Entities.Post;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -50,9 +50,9 @@ public class PublicationFXMLController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        Post p = PublicationsFXMLController.post;
-        NameUserTf.setText(p.getUsersPosts().getFirst_name()+" "+p.getUsersPosts().getLast_name());
-        PostTf.setText(p.getContent());
+       // Post p = PublicationsFXMLController.post;
+       // NameUserTf.setText(p.getUsersPosts().getFirst_name()+" "+p.getUsersPosts().getLast_name());
+       // PostTf.setText(p.getContent());
         
     }    
 

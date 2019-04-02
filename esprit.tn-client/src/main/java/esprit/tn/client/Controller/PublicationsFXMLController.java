@@ -28,9 +28,9 @@ import com.jfoenix.controls.JFXDialogLayout;
 import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 
-import entity.Condidate_Profile;
-import entity.Entreprise_Profile;
-import entity.Post;
+//import Entities.Condidate_Profile;
+//import Entities.Entreprise_Profile;
+import Entities.Post;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -43,8 +43,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import services.serviceConnectionRemote;
-import services.servicePublicationRemote;
+//import Service.serviceConnectionRemote;
+import Service.servicePublicationRemote;
 
 /**
  * FXML Controller class
@@ -60,7 +60,7 @@ public class PublicationsFXMLController implements Initializable {
     @FXML
     private VBox PostsFeeds;
     
-    public static Post post;
+    public static Entities.Post post;
     @FXML
     private VBox listCondidatSugg;
     @FXML
