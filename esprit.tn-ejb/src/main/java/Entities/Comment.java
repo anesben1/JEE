@@ -12,6 +12,7 @@ import javax.persistence.*;
 @Entity
 
 public class Comment implements Serializable {
+	/* This is a comment */
 
 	   
 	@Id
