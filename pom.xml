@@ -92,5 +92,6 @@
     <module>esprit.tn-ejb</module>
     <module>esprit.tn-web</module>
     <module>esprit.tn-ear</module>
+    <module>esprit.tn-client</module>
   </modules>
 </project>

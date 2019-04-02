@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="189.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PublicationFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="Post" layoutX="51.0" layoutY="30.0" onMouseClicked="#OpenPost" style="-fx-background-color: #d2dae2;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <AnchorPane AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <HBox layoutX="14.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="ImgUser" fitHeight="68.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/user.png" />
+                           </image>
+                        </ImageView>
+                        <VBox spacing="3.0">
+                           <children>
+                              <Label fx:id="NameUserTf" onMouseClicked="#GotoProfil" prefWidth="172.0" styleClass="lien" stylesheets="@../Stylesheets/base.css" text="Khoubaib Chihaoui">
+                                 <font>
+                                    <Font name="Monospaced Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="PostDateTf" prefHeight="17.0" prefWidth="114.0" text="2 Décembre 2019" textFill="#6f6d6d" />
+                              <Text fx:id="PostTf" strokeType="OUTSIDE" strokeWidth="0.0" text="Stay true to yourself, yet always be open to learn. Work hard, and never give up on your dreams, even when nobody else believes they can come true but you. These are not cliches but real tools you need no matter what you do in life to stay focused on your path.Read more at: https://www.brainyquote.com/topics/work" wrappingWidth="490.13671875" />
+                              <HBox prefWidth="589.0">
+                                 <children>
+                                    <JFXButton fx:id="likebtn" onAction="#OnlikePost" prefHeight="39.0" prefWidth="186.0" text="Like">
+                                       <HBox.margin>
+                                          <Insets left="7.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fx:id="likeicon" fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/Like-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="Commentbtn" onAction="#OnCommentpost" prefHeight="39.0" prefWidth="186.0" text="Comment">
+                                       <graphic>
+                                          <ImageView fitHeight="28.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/comment-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="Sharebtn" onAction="#OnSharePost" prefHeight="39.0" prefWidth="186.0" text="Share">
+                                       <graphic>
+                                          <ImageView fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/icons8-share-16.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <padding>
+                                    <Insets top="3.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow height="50.65" radius="23.3425" spread="0.3" width="44.72" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
