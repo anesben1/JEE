@@ -13,6 +13,7 @@ import javax.persistence.*;
 
 public class Comment implements Serializable {
 	/* This is a comment */
+	/* Another commmeeent*/
 
 	   
 	@Id
